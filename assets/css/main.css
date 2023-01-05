@@ -1236,7 +1236,15 @@ input, select, textarea {
 		}
 
 /* Header */
+.title-flex{
+	display: flex;
+    justify-content: center;
 
+}
+.project-button-div{
+		display: flex;
+justify-content: space-around;
+}
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
