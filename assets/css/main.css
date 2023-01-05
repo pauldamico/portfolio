@@ -1235,7 +1235,7 @@ input, select, textarea {
 
 		}
 
-/* Header */
+/* custom */
 .title-flex{
 	display: flex;
     justify-content: center;
@@ -1245,6 +1245,13 @@ input, select, textarea {
 		display: flex;
 justify-content: space-around;
 }
+.contact-div{
+	display: flex;
+    justify-content: flex-end;
+
+}
+
+/* Header */
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
