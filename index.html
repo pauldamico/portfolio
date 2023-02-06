@@ -75,7 +75,7 @@
           <div class="title-flex">
           <h2 class="major">My Projects/Apps</h2>
         </div>
-          <span class="image main "><img  src="images/reactnode.png" alt="" /></span>
+          <span class="image main "><img class="project-image" src="./images/gamerprofile.png" alt="" id="project-image"/></span>
           <p class="project-title">
           <a href="https://www.trackmydog.app/tracker" target="_blank">Track My Dog</a>
           <p>I developed this app to allow users to track when you fed, took out, gave treat, scheduled vet apt, and grooming apt.</p>
@@ -153,7 +153,24 @@
 					  btn.value = 'Send Email';
 					  alert(JSON.stringify(err));
 					});
-				});</script>
+				});
+        
+        let projectImage= document.getElementById("project-image")
+        let allProjectImages = [ './images/gamerprofile.png', './images/trackmydog.png', './images/hotzone.png', './images/mealplanner.png']
+        let count = 0   
+        setInterval(function(){
+          
+          count += 1    
+         if(count > 3){
+          count = 0
+         }
+// let random = Math.floor(Math.random() * 4)
+projectImage.src = allProjectImages[count];
+        }, 5000)
+       
+        
+        
+        </script>
 		  </form>
           <!-- <form method="post" action="#">
             <div class="fields">
